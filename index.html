@@ -1,0 +1,41 @@
+  
+<html>
+    <head>
+        <title>Project 78</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <center>
+        <h1>My Family Book</h1>
+        <img src="https://i.postimg.cc/prfg2HWS/download.png" id="family_photo">
+        <p id="Family_p">Nikunj Bansal</p>
+        <button onclick="update()">Next</button>
+        </center>
+<script>
+    var images =
+    [
+   "https://th.bing.com/th/id/OIP.dnLS8K88pIR0f01rnh96vQHaKF?w=200&h=272&c=7&o=5&pid=1.7", "https://th.bing.com/th/id/OIP.Us3rnSyiqryVLH3QUMq3cQAAAA?w=115&h=180&c=7&o=5&pid=1.7", 
+   "https://th.bing.com/th/id/OIP.KL2rbTvytwM2AJ-1nH4hYAHaLH?w=115&h=180&c=7&o=5&pid=1.7","https://th.bing.com/th/id/OIP.YGIR7fdGM8YWHrvdCSxaEwAAAA?w=198&h=314&c=7&o=5&pid=1.7"
+    ];
+    var names = 
+    ["ME", "My mother", "My father", "My little brother"];
+var i = 0;
+function update()
+{
+i++;
+var number_of_family_in_array = 4;
+if(i > number_of_family_in_array )
+{
+ i = 0;
+}
+var updateimage = images[i];
+var updatenames = names[i];
+document.getElementById("family_photo").src=updateimage;
+document.getElementById("Family_p").innerHTML=updatenames;
+}
+
+
+</script>
+</body>
+</html>
